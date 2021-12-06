@@ -86,6 +86,12 @@ li a:hover {
     width: 28rem;
     background-color: #d08d02;
     transform: translate(25px,25px);
+    animation-name: texto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-delay: 0;
+    position: relative;
 }
 
 #contenedorTexto .contenedor p{
@@ -94,9 +100,17 @@ li a:hover {
 }
 
 
-#contenedorTexto:hover{
-    
+@keyframes texto{
+    0%{
+        left: 0;
+    }
 
+    50%{
+        left: 80%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 
